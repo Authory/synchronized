@@ -18,18 +18,11 @@ Synchronized decorator:
 
 ```ts
 class Runner {
-  private taskId: number
-  
-  constructor(taskId: number) { this.taskId = taskId }
-
-  // Synchronized works on methods.
+  // Synchronized works on methods. 
+  // Creates a seperate lock context for each instance.
   @synchronized
   public async run() {
-    console.log(`Begin ${this.taskId}`)
-
-    // Do some async work.
-
-    console.log(`End ${this.taskId}`)
+    // Do some async work that can never race for an instance of this instance.
   }
 }
 ```
