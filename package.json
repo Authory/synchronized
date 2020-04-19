@@ -4,7 +4,8 @@
   "description": "Non-distributed mutex for JS async/await and synchronized TS decorator",
   "scripts": {
     "test": "npx jest --runInBand",
-    "prepublish": "tsc"
+    "prepublish": "tsc -p .",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",

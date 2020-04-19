@@ -5,15 +5,17 @@
       "sourceMap": true,
       "lib": ["es6", "DOM"],
       "moduleResolution": "node",
-      "outDir": "../dist",
+      "outDir": "./dist",
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
-      "declaration": true
+      "declaration": true,
+      "sourceRoot": "lib"
   },
   "exclude": [
       "dist",
+      "examples",
       "node_modules",
-      "test",
+      "./test",
       ".vscode",
       ".vs",
       ".git"
