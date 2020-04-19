@@ -1,12 +1,13 @@
 {
   "name": "synchronized-ts",
   "version": "1.0.0",
-  "description": "Non-distributed mutex for JS async/await and synchronized TS decorator",
+  "description": "Mutex and @synchronized TS decorator",
   "scripts": {
     "test": "npx jest --runInBand",
     "prepublish": "tsc -p .",
     "build": "tsc -p ."
   },
+  "keywords": ["synchronized", "mutex", "synchronization", "lock", "concurrency", "typescript"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Authory/synchronized.git"
