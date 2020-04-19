@@ -1,12 +1,16 @@
 # Mutex and @synchronized for TS
 
-This library provides a mutex that works with async functions. It guarantees that a certain async code section is never executed concurrently. ⚙️
+This library provides a mutex that works with async functions. It guarantees that a certain async code section is never executed concurrently. ⚙️⚡
 
 Furthermore, it provides an `@synchronized` decorator for usage in typescript.
 
-### Why should I use this?
+### Installation
 
-Generally speaking, you should always aim for lock-free concurrency mechanisms when building web applications. However, there might be corner cases: I ran into a case with 3rd party APIs, where executing concurrent calls to certain API in the same user context broke things, hence I wrote this library.
+```bash
+yarn add synchronized-ts
+# or
+npm i synchronized-ts
+```
 
 ### Usage and Examples
 
@@ -57,6 +61,12 @@ app.post('/signup/', async (ctx: any) => {
   })
 })
 ```
+
+For more detailed examples, please look into the `examples` and `test` folders.
+
+### Why should I use this?
+
+Generally speaking, you should always aim for lock-free concurrency mechanisms when building web applications. However, there might be corner cases: I ran into a case with 3rd party APIs, where executing concurrent calls to certain API in the same user context broke things, hence I wrote this library.
 
 ### Caveats
 
