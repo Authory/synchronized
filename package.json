@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/Authory/synchronized.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Emanuel Jöbstl <emanuel@authory.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Authory/synchronized/issues"
   },
