@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "sourceMap": true,
+      "lib": ["es6", "DOM"],
+      "moduleResolution": "node",
+      "outDir": "../dist",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "declaration": true
+  },
+  "exclude": [
+      "dist",
+      "node_modules",
+      "test",
+      ".vscode",
+      ".vs",
+      ".git"
+  ]
+}
