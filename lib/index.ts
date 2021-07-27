@@ -38,8 +38,8 @@ export class Mutex<ResType> {
       if(this.queue.length === 1) {
         // If, while execution of the first chain,
         // another promise was enqueued, the first chain's call
-        // is responsible for calling and resolving all enqueed promises.
-        // This ensurs promises are not resolved twive.
+        // is responsible for calling and resolving all enqueued promises.
+        // This ensures promises are not resolved twice.
         while(this.queue.length > 0) {
           const { fun, resolve, reject } = this.queue[0]
           
